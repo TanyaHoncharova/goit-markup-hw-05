@@ -430,13 +430,24 @@ body {
 }
 
 .team-card {
+    width: 270px;
     margin-right: 30px;
     background-color: var(--white-color);
     border-bottom: 1px solid transparent;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     border-radius: 5px;
-    /* добавить тень внизу карточки */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+   
+}
+.team-card img {
+    
+    display: block;
+    min-width: 270px;
+    height: auto;
+    margin: 0px;
 }
 
 .card-des>h3 {
@@ -556,7 +567,11 @@ body {
 }
 
 .clients-logo {
-
+width: 170px;
+height: 90px;
+display: flex;
+align-items:center;
+justify-content: center;
     fill: var(--icon-color);
 
     transition-property: fill;
@@ -609,7 +624,8 @@ footer {
 }
 
 .logo-link span {
-    color: var(--accent-color)
+    color: var(--accent-color);
+    margin: 0px;
 }
 
 .contacts {
